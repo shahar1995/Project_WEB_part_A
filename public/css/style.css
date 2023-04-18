@@ -54,9 +54,9 @@ border-radius: 30px;
 
 }
 
-
 .img_flow{
-    width: 30%;
+    width: 50vw;
+    hight:50vh;
   display: inline-block;
  float: right;
     margin-right: 10px;
@@ -67,6 +67,8 @@ border-radius: 30px;
     background-repeat: no-repeat;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 92%;
+    padding: 1%;
 
 
 
@@ -118,7 +120,9 @@ border-radius: 30px;
     letter-spacing: 1px;
 
 }
+.text input {
 
+ }
 .submit input {
     background: brown;
      border: none;
@@ -193,4 +197,33 @@ display: inline-block;
     background-size: cover;
     color: white;
 
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: black;
+}
+
+.logo a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.login-options a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.tabs a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.tabs a:hover {
+  border-bottom: 2px solid white;
 }

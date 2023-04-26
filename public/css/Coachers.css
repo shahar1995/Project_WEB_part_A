@@ -1,0 +1,135 @@
+
+.content{
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Verdana, sans-serif;
+    background-color: #e0d9d0 ;
+}
+
+.h1{
+    text-align: center;
+    width:100% ;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+
+}
+
+
+
+.content form h4{
+    justify-content: center;
+    width:100% ;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-transform: UPPERCASE;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+    border-bottom: 4px solid  #e46c74;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+
+}
+
+.fixed-bottom{
+        background-color: #5e5551;
+        height: 5%;
+        align-items: center;
+        background-size: cover;
+        z-index: 0 !important;
+        position: relative !important;
+        margin-top: 20%;
+    }
+    .column {
+        float: left;
+        width: 33.33% !important;
+        height:100%  ;
+        padding: 10px;
+        align-items: center;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+.column h4{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.column p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.map{
+    align-items: center;
+    text-align: center;
+}
+.map img{
+    height:100%  ;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+.column h4{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.column p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.coach {
+  margin-bottom: 50px;
+
+}
+
+.coach img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 300px;
+}
+
+.coach h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.coach p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+
+

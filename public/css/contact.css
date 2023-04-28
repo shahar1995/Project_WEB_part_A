@@ -123,6 +123,7 @@
 }
 
 .content form h1{
+        padding-top: 5%;
     justify-content: left;
     width:100% ;
     font-weight: bolder;

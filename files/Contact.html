@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <title>Title</title>
+        <script src="../public/JS/contact.js"></script>
+
 </head>
 <body>
 <div class="content">
@@ -23,6 +25,19 @@
 
             <label for="Email">Email:</label>
 			<input type="Email" id="Email" name="Email" placeholder="Enter your Email" required>
+            <label for="request">Reason of the request:</label>
+            <select id="request" name="request" size="1">
+               <option value="Help with registration">Help with registration</option>
+              <option value="Explanation of the studio">Explanation of the studio</option>
+              <option value="Technical problems">Technical problems</option>
+              <option value="Talk to a representative">Talk to a representative</option>
+                 <option value="Membership cancellation">Membership cancellation</option>
+                   <option value="An explanation of one of the training sessions">An explanation of one of the training sessions</option>
+              <option value="other">Other</option>
+            </select>
+
+
+
                 <label for="description">Description:</label>
           <textarea id="description" name="description" required></textarea>
 		        <div class="form-submit">

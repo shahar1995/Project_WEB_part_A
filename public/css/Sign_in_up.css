@@ -7,6 +7,17 @@
     font-family: Geneva, Verdana, sans-serif;
  background-color: #e0d9d0;
 }
+
+select {
+	display: block;
+	width: 15%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #e46c74;
+	border-radius: 10px;
+
+
+}
 .container {
     display: flex;
     flex-wrap: wrap;

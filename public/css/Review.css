@@ -1,9 +1,9 @@
                                                                                  /* Personal area container */
-.personal-area {
+.Register {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: ;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -12,8 +12,12 @@
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
+	margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 20px ;
+
 }
+
 
 /* Form inputs */
 select,
@@ -39,7 +43,7 @@ button[type="button"] {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #e46c74;
   border: none;
   border-radius: 5px;
   cursor: pointer;

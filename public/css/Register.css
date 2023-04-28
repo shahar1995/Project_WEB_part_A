@@ -1,0 +1,121 @@
+                                                                                 /* Personal area container */
+.Register {
+    margin: 0 auto;
+  padding: 20px;
+   border-radius: 5px;
+    max-width: 70%;
+
+}
+* {
+  font-family: Poppins, sans-serif
+    background-color: blue;
+
+}
+
+/*!* Form labels *!*/
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+select,
+textarea{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #e46c74;
+	border-radius: 10px;
+  text-align: center;
+
+
+}
+
+
+textarea {
+  height: 150px;
+}
+
+/* Submit buttons */
+button[type="submit"],
+button[type="button"] {
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e46c74;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: pink;
+}
+
+
+
+.fixed-bottom{
+        background-color: #5e5551;
+        height: 5%;
+        align-items: center;
+        background-size: cover;
+        z-index: 0 !important;
+        position: relative !important;
+        margin-top: 20%;
+    }
+    .column {
+        float: left;
+        width: 33.33% !important;
+        height:100%  ;
+        padding: 10px;
+        align-items: center;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+.column h4{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.column p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.map{
+    align-items: center;
+    text-align: center;
+}
+.map img{
+    height:100%  ;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+h1{
+        padding-top: 5%;
+    justify-content: left;
+    width:100% ;
+    font-weight: bolder;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    border-bottom: 4px solid #e46c74;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+
+}

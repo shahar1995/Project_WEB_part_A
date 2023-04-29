@@ -3,29 +3,29 @@ const usersContainer = document.getElementById("users-container");
 fetch("../public/JSON/information.json")
   .then(response => response.json())
   .then(data => {
-    const Trainings = data.Trainings;
-    for (let i = 0; i < Trainings.length; i++) {
-      const Training = Trainings[i];
+    const Coachers = data.Coachers;
+    for (let i = 0; i < Coachers.length; i++) {
+      const Coachers = Coachers[i];
 
 
     const userElement = document.createElement("div");
-      userElement.classList.add("Training");
+      userElement.classList.add("Coachers");
 
 
       const nameElement = document.createElement("h2");
-      nameElement.textContent = Training.Name;
+      nameElement.textContent = Coachers.Name;
       userElement.appendChild(nameElement);
 
       const photoElement = document.createElement("img");
-      photoElement.alt = Training.Name;
-      photoElement.src = Training.photo;
+      photoElement.alt = Coachers.Name;
+      photoElement.src = Coachers.photo;
       userElement.appendChild(photoElement);
 
 
 
 
       const descriptionElement = document.createElement("p");
-      descriptionElement.textContent = Training.description;
+      descriptionElement.textContent = Coachers.description;
       userElement.appendChild(descriptionElement);
 
       usersContainer.appendChild(userElement);

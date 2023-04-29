@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+    "description" : "Functional training is a type of exercise that focuses on improving movements that are fundamental to daily activities, sports, and fitness. The goal of functional training is to enhance one's overall strength, endurance, balance, and flexibility in ways that can improve the body's ability to function efficiently and prevent injuries.Functional training typically involves exercises that mimic real-life movements, such as squatting, lunging, twisting, pushing, and pulling. These exercises can be performed with free weights, resistance bands, kettlebells, or bodyweight exercises, and can target multiple muscle groups simultaneously.One of the key principles of functional training is that it is adaptable to the individual's fitness level and goals. Exercises can be modified by changing the resistance, range of motion, or tempo, making them suitable for beginners, advanced athletes, and everyone in between.Functional training can benefit people of all ages and fitness levels, from athletes looking to improve their performance to seniors looking to maintain their mobility and independence. It is often incorporated into rehabilitation programs to help people recover from injuries or surgeries and regain their strength and flexibility. ",
+      "photo": "../public/pics/Pilates.jpg"
+    },
+    {
+      "name": "Jane Smith",
+    "description" : "Functional training is a type of exercise that focuses on improving movements that are fundamental to daily activities, sports, and fitness. The goal of functional training is to enhance one's overall strength, endurance, balance, and flexibility in ways that can improve the body's ability to function efficiently and prevent injuries.Functional training typically involves exercises that mimic real-life movements, such as squatting, lunging, twisting, pushing, and pulling. These exercises can be performed with free weights, resistance bands, kettlebells, or bodyweight exercises, and can target multiple muscle groups simultaneously.One of the key principles of functional training is that it is adaptable to the individual's fitness level and goals. Exercises can be modified by changing the resistance, range of motion, or tempo, making them suitable for beginners, advanced athletes, and everyone in between.Functional training can benefit people of all ages and fitness levels, from athletes looking to improve their performance to seniors looking to maintain their mobility and independence. It is often incorporated into rehabilitation programs to help people recover from injuries or surgeries and regain their strength and flexibility. ",
+      "photo": "Yoga.jpg"
+    }
+  ]
+}

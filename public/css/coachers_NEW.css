@@ -1,0 +1,77 @@
+
+
+.coach{
+    font-family: Geneva, Verdana, sans-serif;
+  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.users-container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+
+.coach img {
+  object-fit: contain;
+  /*height: 50px;*/
+  margin: 0 auto;
+  max-width: 20%;
+  text-align: center;
+  height: 300px;
+	padding: 20px;
+
+
+}
+@media screen and (max-width: 1000px) {
+  coach img {
+    display: none;
+  }
+}
+
+ h1{
+   padding-top: 5%;
+    justify-content: center;
+    width:100% ;
+    font-weight: bolder;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    border-bottom: 4px solid #e46c74;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+h2{
+    justify-content: center;
+    text-align: center;
+    width:100% ;
+    font-weight: 200;
+    font-size: 1.7em;
+    text-transform: UPPERCASE;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 4px solid #5e5551;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+}
+
+* {
+	padding: 0;
+    box-sizing: border-box;
+    font-family: Geneva, Verdana, sans-serif;
+    /*background-color: #e0d9d0;*/
+    font-weight: bolder;
+}
+
+.coach p {
+	flex: 1;
+	padding: 20px;
+  	flex-direction: row;
+	justify-content: center;
+}

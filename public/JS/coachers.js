@@ -1,4 +1,4 @@
-const usersContainer = document.getElementById("users-container");
+const usersContainer = document.getElementById("Coachers-container");
 
 fetch("../public/JSON/information.json")
   .then(response => response.json())

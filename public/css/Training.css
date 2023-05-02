@@ -5,15 +5,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
 }
 .users-container {
 	max-width: 1200px;
 	margin: 0 auto;
-
 }
-
-
 .Training img {
   object-fit: contain;
   /*height: 50px;*/
@@ -22,15 +18,12 @@
   text-align: center;
   height: 300px;
 	padding: 20px;
-
-
 }
 @media screen and (max-width: 1000px) {
   Training img {
     display: none;
   }
 }
-
  h1{
    padding-top: 5%;
     justify-content: center;
@@ -42,7 +35,6 @@
     border-bottom: 4px solid #e46c74;
     letter-spacing: 1px;
     text-align: center;
-
 }
 h2{
     justify-content: center;
@@ -56,9 +48,7 @@ h2{
     border-bottom: 4px solid #5e5551;
     letter-spacing: 1px;
     font-weight: bolder;
-
 }
-
 * {
 	padding: 0;
     box-sizing: border-box;
@@ -66,57 +56,9 @@ h2{
     /*background-color: #e0d9d0;*/
     font-weight: bolder;
 }
-
 .Training p {
 	flex: 1;
 	padding: 20px;
   	flex-direction: row;
 	justify-content: center;
-}
-
-
-.fixed-bottom{
-        background-color: #5e5551;
-       height: 5%;
-        align-items: center;
-        background-size: cover;
-        z-index: 0 !important;
-        position: relative !important;
-        margin-top: 20%;
-    }
-    .column {
-        float: left;
-        width: 33.33% !important;
-        height:100%  ;
-        padding: 10px;
-        align-items: center;
-      }
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-.column h4{
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-.column p{
-    color: white;
-    font-size: 14px;
-    text-align: center;
-}
-.map{
-    align-items: center;
-    text-align: center;
-}
-.map img{
-    height:100%  ;
-    align-items: center;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    color: white;
-
 }

@@ -1,17 +1,16 @@
-const CoachContainer = document.getElementById("Coach-container");
+//Take a values from information json for coach //
 
+
+const CoachContainer = document.getElementById("Coach-container");
 fetch("../public/JSON/information.json")
   .then(response => response.json())
   .then(data => {
     const Coach = data.Coach;
-
     for (let i = 0; i < Coach.length; i++) {
       const Coachh = Coach[i];
 
-
     const CoachElement = document.createElement("div");
       CoachElement.classList.add("Coachh");
-
 
       const nameElement = document.createElement("h2");
       nameElement.textContent = Coachh.Name;
@@ -21,9 +20,6 @@ fetch("../public/JSON/information.json")
       photoElement.alt = Coachh.Name;
       photoElement.src = Coachh.photo;
       CoachElement.appendChild(photoElement);
-
-
-
 
       const descriptionElement = document.createElement("p");
       descriptionElement.textContent = Coachh.description;

@@ -1,5 +1,6 @@
-const usersContainer = document.getElementById("users-container");
+//Take a values from information json for trainings //
 
+const usersContainer = document.getElementById("users-container");
 fetch("../public/JSON/information.json")
   .then(response => response.json())
   .then(data => {
@@ -7,10 +8,8 @@ fetch("../public/JSON/information.json")
     for (let i = 0; i < Trainings.length; i++) {
       const Training = Trainings[i];
 
-
     const userElement = document.createElement("div");
       userElement.classList.add("Training");
-
 
       const nameElement = document.createElement("h2");
       nameElement.textContent = Training.Name;
@@ -20,9 +19,6 @@ fetch("../public/JSON/information.json")
       photoElement.alt = Training.Name;
       photoElement.src = Training.photo;
       userElement.appendChild(photoElement);
-
-
-
 
       const descriptionElement = document.createElement("p");
       descriptionElement.textContent = Training.description;

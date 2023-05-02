@@ -1,3 +1,5 @@
+//For the top bar //
+
 function welcomingTitle() {
     console.log("Welcome");
     var date = new Date();

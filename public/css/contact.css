@@ -10,7 +10,7 @@
 	padding: 0;
     box-sizing: border-box;
     font-family: Geneva, Verdana, sans-serif;
-    background-color: #e0d9d0;
+    /*background-color: #e0d9d0;*/
 }
 .container {
     display: flex;
@@ -103,7 +103,6 @@ select {
     justify-content: center;
     text-align: center;
     width:100% ;
-    font-weight: 200;
     font-size: 1.7em;
     text-transform: UPPERCASE;
     margin-bottom: 10px;

@@ -32,7 +32,6 @@ select {
 	margin-bottom: 20px;
 	border: 1px solid #e46c74;
 	border-radius: 10px;
-
 }
 
 .form-container label {
@@ -40,7 +39,6 @@ select {
     font-weight: bolder;
     font-size: 20px ;
     margin-top: 10px;
-
 }
 
 .form-container input {
@@ -50,7 +48,6 @@ select {
 	margin-bottom: 20px;
 	border: 1px solid #e46c74;
 	border-radius: 10px;
-
 }
 
 .form-container input[type="submit"] {
@@ -68,55 +65,8 @@ select {
 }
 
 
-
-.fixed-bottom{
-        background-color: #5e5551;
-        height: 5%;
-        align-items: center;
-        background-size: cover;
-        z-index: 0 !important;
-        position: relative !important;
-        margin-top: 20%;
-    }
-    .column {
-        float: left;
-        width: 33.33% !important;
-        height:100%  ;
-        padding: 10px;
-        align-items: center;
-      }
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-.column h4{
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-.column p{
-    color: white;
-    font-size: 14px;
-    text-align: center;
-}
-.map{
-    align-items: center;
-    text-align: center;
-}
-.map img{
-    height:100%  ;
-    align-items: center;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    color: white;
-
-}
-
 .content form h1{
-        padding-top: 5%;
+    padding-top: 5%;
     justify-content: left;
     width:100% ;
     font-weight: bolder;
@@ -127,14 +77,12 @@ select {
     display: inline-block;
     letter-spacing: 1px;
     text-align: center;
-
 }
 
 .content form h4{
     justify-content: center;
     text-align: center;
     width:100% ;
-    font-weight: 200;
     font-size: 1.7em;
     text-transform: UPPERCASE;
     margin-bottom: 10px;
@@ -148,6 +96,6 @@ select {
 
  .form-container textarea {
     height: 150px;
-     	border-radius: 4px;
-    	border: 1px solid #e46c74;
+     border-radius: 4px;
+     border: 1px solid #e46c74;
   }

@@ -369,6 +369,9 @@ input{
     border: none;
 }
 
-label{
-    font-weight: bold;
+.user-icon {
+    font-size: 40px;
+    color: #e46c74;
+    line-height: 60px;
+    margin: 0px;
 }

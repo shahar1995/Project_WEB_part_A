@@ -5,7 +5,6 @@ const form_sign = document.querySelector('.form-container');
     form_sign.addEventListener("submit",function(event) {
         // event.preventDefault();
 
-
         form.addEventListener('submit', function (event) {
             // Prevent the form from submitting if validation fails
 

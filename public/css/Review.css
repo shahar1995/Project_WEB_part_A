@@ -9,7 +9,7 @@ p {
 .content {
 	padding: 0;
     box-sizing: border-box;
-    /*background-color: #e0d9d0;*/
+    background-color: papayawhip;
 }
 .container {
     display: flex;
@@ -45,6 +45,7 @@ select {
 	margin-bottom: 20px;
 	border: 1px solid #e46c74;
 	border-radius: 10px;
+    height: 60px;
 }
 
 .form-container input[type="submit"] {

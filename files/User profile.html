@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User ProfileS</title>
+    <title>User Profile</title>
     <link rel="stylesheet" href="../public/css/user-profile.css">
     <link href="https://fonts.googleapis.com/css?family=Buffalo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,10 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://kit.fontawesome.com/b39bb7fe27.js"></script>
-  </head>
 </head>
 
-    <body onload="welcomingTitle()">
+<body onload="welcomingTitle()">
     <div class="topBar"> </div>
     <nav>
         <input type="checkbox" id="check">
@@ -23,46 +22,41 @@
         </label>
         <img src="../public/pics/flow big.png" alt="Navigation Bar Logo" class = "navBarLogo">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">FLOW coachers </a></li>
-            <li><a href="#">FLOW classes</a></li>
-            <li><a href="#">FLOW week schedule</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">My Profile</a></li>
+            <li><a href="../files/Home-page.html">Home</a></li>
+            <li><a href="../files/Coechers.html">FLOW coaches </a></li>
+            <li><a href="../files/Registration%20for%20classes.html">FLOW classes</a></li>
+            <li><a href="../files/Table%20of%20classes.html">FLOW week schedule</a></li>
+            <li><a href="../files/Contact.html">Contact us</a></li>
+            <li><a href="../files/User%20profile.html">My Profile</a></li>
         </ul>
     </nav>
 
+    <div class="mainForm">
         <div class="user-profile">
           <div class="profile-items">
 
-            <br><br><br><br>
-            <h1>Welcome Back</h1>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <h1 id="userTitle">Welcome Back,</h1>
+            <label id="name-label">Name:</label>
             <br>
-            <label for="birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="birthdate">
+            <label id="birthdate">Birthdate:</label>
             <br>
-            <label for="health-level">Health Level:</label>
-            <input type="number" id="health-level" name="health-level" min="0" max="5">
+            <label id="health-level">Health Level:</label>
           </div>
-
+            <br>
           <div class="lesson-list">
-            <h2>Upcoming Lessons</h2>
-            <ul>
-              <li class="lesson">Lesson 1</li>
-              <li class="lesson">Lesson 2</li>
-              <li class="lesson">Lesson 3</li>
+            <h4>Your Upcoming Lessons</h4>
+            <ul class="lessons">
             </ul>
           </div>
 
           <div class="button-container">
-            <button class="button">Review class</button>
-            <button class="button">Update Profile</button>
-            <button class="button">Delete Profile</button>
+              <button class="button" data-url="../files/Review.html">Review Lesson</button>
+              <button class="button" data-url="../files/Contact.html">Update Profile</button>
+              <button class="button" data-url="../files/Contact.html">Cancel Membership</button>
           </div>
         </div>
-
+    </div>
+        <br><br><br><br><br>
         <footer>
             <div class="bottomBar">
                 <div class="row">
@@ -108,6 +102,7 @@
                     </div>
                 </div>
         </footer>
-        <script src="Welcome-title.js"> </script>
+        <script src="../public/JS/user-profile.js"></script>
+        <script src="../Public/JS/Welcome-title.js"> </script>
     </body>
 </html>

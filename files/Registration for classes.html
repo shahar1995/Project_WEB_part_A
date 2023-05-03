@@ -9,86 +9,55 @@
     <title>Register</title>
 </head>
 <body>
-<div class="content">
+    <div class="content">
 	   <div class = "formbx">
+            <div class="container">
+                <form class="form-container">
+                    <h1>Registration for classes</h1>
+                        <form action="mailto:flow.studio@gmail.com" method="post" enctype="text/plain">
+			                <label for="ID">ID:</label>
+			                <input type="text" id="ID" name="ID" placeholder="Enter your ID" required>
+                            <label for="Email">Email:</label>
+                            <input type="Email" id="Email" name="Email" placeholder="Enter your Email" required>
+                            <label for="Day">Day:</label>
+                                <select id="Day" name="Day" size="1">
+                                    <option value="Sunday">Sunday</option>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                </select>
 
-	<div class="container">
-
-		<form class="form-container">
-            <h1>Registration for classes</h1>
-  <form action="mailto:flow.studio@gmail.com" method="post" enctype="text/plain">
-			<label for="ID">ID:</label>
-			<input type="text" id="ID" name="ID" placeholder="Enter your ID" required>
-
-            <label for="Email">Email:</label>
-			<input type="Email" id="Email" name="Email" placeholder="Enter your Email" required>
-            <label for="Day">Day:</label>
-    <select id="Day" name="Day" size="1">
-      <option value="Sunday">Sunday</option>
-      <option value="Monday">Monday</option>
-      <option value="Tuesday">Tuesday</option>
-         <option value="Wednesday">Wednesday</option>
-          <option value="Thursday">Thursday</option>
-          <option value="Friday">Friday</option>
-          <option value="Saturday">Saturday</option>
-    </select>
-
-    <label for="time">Time:</label>
-    <select id="time" name="time" size="1">
-      <option value="09:00">9:00 AM</option>
-      <option value="10:00">10:00 AM</option>
-      <option value="11:00">11:00 AM</option>
-       <option value="12:00">12:00 AM</option>
-      <option value="17:00">17:00 AM</option>
-      <option value="18:00">18:00 AM</option>
-      <option value="19:00">19:00 AM</option>
-      <option value="20:00">20:00 AM</option>
-      <option value="21:00">21:00 AM</option>
-
-    </select>
-    <label for="workout">Workout:</label>
-    <select id="workout" name="workout">
-      <option value="Yoga Training">Yoga Training</option>
-      <option value="Functional Training">Functional Training</option>
-      <option value="Zumba Training">Zumba Training</option>
-        <option value="Pilates Training">Zumba Training</option>
-       <option value="Strength Training">Strength Training</option>
-      <option value="TRX Training">TRX Training</option>
-    </select>
-
-
-		        <div class="form-submit">
-          <input type="submit" value="Save registration">
-</div>
-   </form>
-	</div>
-	  </div>
-	  <footer>
-    <div class="fixed-bottom">
-        <div class="row">
-    <div class="column">
-        <h4>Find us at: </h4>
-        <p>1 Tse'elim Street <br />
-            Meitar, <br />
-              Israel<p>
-  </div>
-          <div class="column">
-        <div class=" map">
-    <h4> The location is: </h4>
-        <a class="nav-link" href="https://goo.gl/maps/xVGp2tQbnvNwgWsX6">
-          <img src="../public/pics/map.png" width="180" height="70" >
-        </a>
-  </div>
-</div>
-            <div class="column">
-    <h4> Contact with us: </h4>
-        <p>0526555351 , 05000000 <br />
-         <a href="mailto:STUDIOFLOW@GMAIL.COM">STUDIOFLOW@GMAIL.COM</a>
-</p>
+                            <label for="time">Time:</label>
+                                <select id="time" name="time" size="1">
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 AM</option>
+                                    <option value="17:00">17:00 AM</option>
+                                    <option value="18:00">18:00 AM</option>
+                                    <option value="19:00">19:00 AM</option>
+                                    <option value="20:00">20:00 AM</option>
+                                    <option value="21:00">21:00 AM</option>
+                                </select>
+                            <label for="workout">Workout:</label>
+                                <select id="workout" name="workout">
+                                    <option value="Yoga Training">Yoga Training</option>
+                                    <option value="Functional Training">Functional Training</option>
+                                    <option value="Zumba Training">Zumba Training</option>
+                                    <option value="Pilates Training">Zumba Training</option>
+                                    <option value="Strength Training">Strength Training</option>
+                                    <option value="TRX Training">TRX Training</option>
+                                </select>
+		                    <div class="form-submit">
+                                <input type="submit" value="Save registration">
+                            </div>
+                        </form>
+                </form>
+	        </div>
+       </div>
     </div>
-            </div>
-           </div>
-</footer>
-
 </body>
 </html>

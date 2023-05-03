@@ -1,38 +1,30 @@
 
-
-.coach{
+.Coachh{
     font-family: Geneva, Verdana, sans-serif;
-  padding: 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
 }
-.users-container {
+.Coach-container {
 	max-width: 1200px;
 	margin: 0 auto;
-
 }
 
-
-.coach img {
+.Coachh img {
   object-fit: contain;
-  /*height: 50px;*/
   margin: 0 auto;
   max-width: 20%;
   text-align: center;
   height: 300px;
-	padding: 20px;
-
-
+  padding: 20px;
 }
 @media screen and (max-width: 1000px) {
-  coach img {
+  Coachh img {
     display: none;
   }
 }
-
  h1{
    padding-top: 5%;
     justify-content: center;
@@ -44,21 +36,18 @@
     border-bottom: 4px solid #e46c74;
     letter-spacing: 1px;
     text-align: center;
-
 }
 h2{
     justify-content: center;
     text-align: center;
     width:100% ;
-    font-weight: 200;
     font-size: 1.7em;
     text-transform: UPPERCASE;
     margin-bottom: 10px;
     margin-top: 20px;
-    border-bottom: 4px solid #5e5551;
+    border-bottom: 4px solid #e46c74;
     letter-spacing: 1px;
     font-weight: bolder;
-
 }
 
 * {
@@ -69,7 +58,7 @@ h2{
     font-weight: bolder;
 }
 
-.coach p {
+.Coachh p {
 	flex: 1;
 	padding: 20px;
   	flex-direction: row;

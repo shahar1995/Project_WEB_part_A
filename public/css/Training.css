@@ -1,58 +1,31 @@
-
-.coach{
+.Training{
     font-family: Geneva, Verdana, sans-serif;
-    background-color: #e0d9d0 ;
   padding: 20px;
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-
-
-
-.coach-container {
+.users-container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+.Training img {
+  object-fit: contain;
+  /*height: 50px;*/
+  margin: 0 auto;
+  max-width: 20%;
+  text-align: center;
+  height: 300px;
 	padding: 20px;
-
 }
-
-.coach-card {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 50px;
-
+@media screen and (max-width: 1000px) {
+  Training img {
+    display: none;
+  }
 }
-
-.coach-card img {
-	width: 400px;
-	height: 300px;
-	object-fit: cover;
-	margin-right: 20px;
-}
-
-.coach-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.coach-info h2 {
- 	font-size: 24px;
-	margin-bottom: 10px;
-  font-family: Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-
-
-}
-
-.coach-info p {
-	font-size: 18px;
-	line-height: 1.5;
-    font-family: Geneva, Verdana, sans-serif;
-}
-
-
-.coach h1{
-    padding-top: 5%;
+ h1{
+   padding-top: 5%;
     justify-content: center;
     width:100% ;
     font-weight: bolder;
@@ -62,66 +35,30 @@
     border-bottom: 4px solid #e46c74;
     letter-spacing: 1px;
     text-align: center;
-
 }
-
-
-.fixed-bottom{
-        background-color: #5e5551;
-       height: 5%;
-        align-items: center;
-        background-size: cover;
-        z-index: 0 !important;
-        position: relative !important;
-        margin-top: 20%;
-    }
-    .column {
-        float: left;
-        width: 33.33% !important;
-        height:100%  ;
-        padding: 10px;
-        align-items: center;
-      }
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-.column h4{
-    color: white;
-    font-size: 18px;
+h2{
+    justify-content: center;
     text-align: center;
+    width:100% ;
+    font-weight: 200;
+    font-size: 1.7em;
+    text-transform: UPPERCASE;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 4px solid #5e5551;
+    letter-spacing: 1px;
+    font-weight: bolder;
 }
-.column p{
-    color: white;
-    font-size: 14px;
-    text-align: center;
+* {
+	padding: 0;
+    box-sizing: border-box;
+    font-family: Geneva, Verdana, sans-serif;
+    /*background-color: #e0d9d0;*/
+    font-weight: bolder;
 }
-.map{
-    align-items: center;
-    text-align: center;
+.Training p {
+	flex: 1;
+	padding: 20px;
+  	flex-direction: row;
+	justify-content: center;
 }
-.map img{
-    height:100%  ;
-    align-items: center;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    color: white;
-
-}
-
-.column h4{
-    color: white;
-    font-size: 18px;
-    text-align: center;
-
-
-}
-.column p{
-    color: white;
-    font-size: 14px;
-    text-align: center;
-}
-

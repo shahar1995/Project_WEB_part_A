@@ -1,33 +1,30 @@
-const usersContainer = document.getElementById("Coachers-container");
+//Take a values from information json for coach //
 
+
+const CoachContainer = document.getElementById("Coach-container");
 fetch("../public/JSON/information.json")
   .then(response => response.json())
   .then(data => {
-    const Coachers = data.Coachers;
-    for (let i = 0; i < Coachers.length; i++) {
-      const Coachers = Coachers[i];
+    const Coach = data.Coach;
+    for (let i = 0; i < Coach.length; i++) {
+      const Coachh = Coach[i];
 
-
-    const userElement = document.createElement("div");
-      userElement.classList.add("Coachers");
-
+    const CoachElement = document.createElement("div");
+      CoachElement.classList.add("Coachh");
 
       const nameElement = document.createElement("h2");
-      nameElement.textContent = Coachers.Name;
-      userElement.appendChild(nameElement);
+      nameElement.textContent = Coachh.Name;
+      CoachElement.appendChild(nameElement);
 
       const photoElement = document.createElement("img");
-      photoElement.alt = Coachers.Name;
-      photoElement.src = Coachers.photo;
-      userElement.appendChild(photoElement);
-
-
-
+      photoElement.alt = Coachh.Name;
+      photoElement.src = Coachh.photo;
+      CoachElement.appendChild(photoElement);
 
       const descriptionElement = document.createElement("p");
-      descriptionElement.textContent = Coachers.description;
-      userElement.appendChild(descriptionElement);
+      descriptionElement.textContent = Coachh.description;
+      CoachElement.appendChild(descriptionElement);
 
-      usersContainer.appendChild(userElement);
+      CoachContainer.appendChild(CoachElement);
     }
   });

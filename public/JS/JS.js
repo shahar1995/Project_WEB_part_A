@@ -1,8 +1,4 @@
-
-//add to bar//
-
-
-    //Take a value from the sign in //
+//Take a values from information json for sign in //
 
 const form_sign = document.querySelector('.sign-in-form');
     const customerID = document.querySelector("#ID");
@@ -41,23 +37,25 @@ async function Valid_user(ID, password) {
 
 }
 
-// invalid values in the sign_up //
+//Valid inputs in sign in - for part 3 //
 
-//   const form = document.getElementsByClassName('sign-in-form');
-// const nameField = document.getElementById('name');
-//
-// nameField.addEventListener('input', (event) => {
-//   const input = event.target.value;
-//   const regex = /^[a-zA-Z\s]*$/; // only allows letters and spaces
-//   if (!regex.test(input)) {
-//     nameField.setCustomValidity('Only letters and spaces are allowed for name');
-//   } else {
-//     nameField.setCustomValidity('');
-//   }
-// });
-//
-// form.addEventListener('submit', (event) => {
-//   if (!form.checkValidity()) {
-//     event.preventDefault();
-//   }
-// });
+invalid values in the sign_up //
+
+  const form = document.getElementsByClassName('sign-in-form');
+const nameField = document.getElementById('name');
+
+nameField.addEventListener('input', (event) => {
+  const input = event.target.value;
+  const regex = /^[a-zA-Z\s]*$/; // only allows letters and spaces
+  if (!regex.test(input)) {
+    nameField.setCustomValidity('Only letters and spaces are allowed for name');
+  } else {
+    nameField.setCustomValidity('');
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  if (!form.checkValidity()) {
+    event.preventDefault();
+  }
+});

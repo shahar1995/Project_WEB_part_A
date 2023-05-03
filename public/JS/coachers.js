@@ -1,5 +1,8 @@
 //Take a values from information json for coach //
+'use strict';
 
+document.addEventListener('DOMContentLoaded', function() {
+  function getData() {
 
 const CoachContainer = document.getElementById("Coach-container");
 fetch("../public/JSON/information.json")
@@ -27,4 +30,7 @@ fetch("../public/JSON/information.json")
 
       CoachContainer.appendChild(CoachElement);
     }
-  });
+  })
+  }
+  getData();
+});

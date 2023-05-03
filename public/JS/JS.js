@@ -18,7 +18,7 @@ const form_sign = document.querySelector('.sign-in-form');
             }
         })
             .catch(error => {
-            alert("Please try again later");
+            // alert("Please try again later");
             console.error(error);
         });
     });
@@ -37,25 +37,57 @@ async function Valid_user(ID, password) {
 
 }
 
-//Valid inputs in sign in - for part 3 //
+//invalid values in the sign_up //
 
-invalid values in the sign_up //
+// Get references to the form and the inputs
+const form = document.querySelector('.sign-in-form');
+const passwordInput = document.querySelector('#password');
+const firstNameInput = document.querySelector('#First Name');
+const lastNameInput = document.querySelector('#Last Name');
+const emailInput = document.querySelector('#Email');
 
-  const form = document.getElementsByClassName('sign-in-form');
-const nameField = document.getElementById('name');
+// Define regular expressions for validation
+const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+const nameRegex = /^[a-zA-Z]+$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-nameField.addEventListener('input', (event) => {
-  const input = event.target.value;
-  const regex = /^[a-zA-Z\s]*$/; // only allows letters and spaces
-  if (!regex.test(input)) {
-    nameField.setCustomValidity('Only letters and spaces are allowed for name');
-  } else {
-    nameField.setCustomValidity('');
-  }
-});
-
-form.addEventListener('submit', (event) => {
-  if (!form.checkValidity()) {
+// Add event listeners for form submission
+form.addEventListener('submit', function(event) {
+  // Prevent the form from submitting if validation fails
+  if (!validatePassword() || !validateName(firstNameInput) || !validateName(lastNameInput) || !validateEmail()) {
     event.preventDefault();
   }
 });
+
+// Validate password input
+function validatePassword() {
+  const passwordValue = passwordInput.value;
+  if (!passwordRegex.test(passwordValue)) {
+    alert('Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character.');
+    passwordInput.focus();
+    return false;
+  }
+  return true;
+}
+
+// Validate name inputs
+function validateName(nameInput) {
+  const nameValue = nameInput.value;
+  if (!nameRegex.test(nameValue)) {
+    alert('Please enter a valid name using only letters.');
+    nameInput.focus();
+    return false;
+  }
+  return true;
+}
+
+// Validate email input
+function validateEmail() {
+  const emailValue = emailInput.value;
+  if (!emailRegex.test(emailValue)) {
+    alert('Please enter a valid email address.');
+    emailInput.focus();
+    return false;
+  }
+  return true;
+}

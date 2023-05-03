@@ -1,6 +1,3 @@
-
-
-
 //invalid values in the sign_up //
 
 // Get references to the form and the inputs
@@ -18,7 +15,13 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Add event listeners for form submission
 form.addEventListener('submit', function(event) {
   // Prevent the form from submitting if validation fails
-  if (!validatePassword() || !validateName(firstNameInput) || !validateName(lastNameInput) || !validateEmail()) {
+
+  if (validatePassword() && validateName(firstNameInput) && validateName(lastNameInput) && validateEmail() && validateID()) {
+    window.location.href = "Home-page.html";
+  }
+  else (!validatePassword() || !validateName(firstNameInput) || !validateName(lastNameInput) || !validateEmail() || !validateID())
+  {
+ alert("Invalid details, Please check again your details");
     event.preventDefault();
   }
 });
@@ -58,8 +61,8 @@ function validateEmail() {
 
 function validateID() {
   const id = document.getElementById("ID").value;
-  const regex = /^\d{8}$/;
-  if (!regex.test(id)) {
+const regex = /\b\d{8}\b/;
+if (!regex.test(id)) {
     alert("ID must be 8 digits.");
     return false;
   }

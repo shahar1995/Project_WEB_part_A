@@ -24,11 +24,11 @@
     });
 
     function Go_to_Home_Page() {
-    window.location.href = "Review.html";
+    window.location.href = "Home-page.html";
 }
 
 async function Valid_user(ID, password) {
-    const response = await fetch("../public/JSON/trainers.json");
+    const response = await fetch("../public/JSON/information.json");
     console.log(response)
     const data =await response.json();
     const found = data.trainers.find(trainer => trainer.ID === ID && trainer.password === password);

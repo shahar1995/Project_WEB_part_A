@@ -54,7 +54,7 @@
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #e46c74;
-	border-radius: 10px;
+	border-radius: 50px;
     width: 300px;
     height: 30px;
     font-size: 14px;
@@ -65,7 +65,7 @@
 .sign-in-form input[type="submit"] {
 	background-color: #e46c74;
 	color: #fff;
-	border-radius: 8px;
+	border-radius: 100px;
 	padding: 5px;
 	cursor: pointer;
 }
@@ -115,7 +115,7 @@ select {
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #e46c74;
-	border-radius: 10px;
+	border-radius: 100px;
     margin-left: 20px;
 }
 .content form h4{

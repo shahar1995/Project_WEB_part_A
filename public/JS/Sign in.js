@@ -11,7 +11,7 @@
     Valid_user(ID, password)
         .then(result => {
             if (result) {
-
+                alert("You are now logged in and redirected to home page.");
                 Go_to_Home_Page();
             } else {
                 alert("Invalid details, Please check again your ID and password");

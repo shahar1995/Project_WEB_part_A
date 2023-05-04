@@ -3,26 +3,28 @@
 // Get references to the form and the inputs
 const form = document.querySelector('.sign-in-form');
 const passwordInput = document.querySelector('#password');
-const firstNameInput = document.querySelector('#First Name');
-const lastNameInput = document.querySelector('#Last Name');
+const firstNameInput = document.querySelector('#First-Name');
+const lastNameInput = document.querySelector('#Last-Name');
 const emailInput = document.querySelector('#Email');
 
 // Define regular expressions for validation
-const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
-const nameRegex = /^[a-zA-Z]+$/;
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+var nameRegex = /^[a-zA-Z]+$/;
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Add event listeners for form submission
 form.addEventListener('submit', function(event) {
   // Prevent the form from submitting if validation fails
+  event.preventDefault();
 
-  if (validatePassword() && validateName(firstNameInput) && validateName(lastNameInput) && validateEmail() && validateID()) {
-    window.location.href = "Home-page.html";
+  if (validateID() && validateFirstName() && validateLastName() && validateEmail() && validatePassword()) {
+    setTimeout(function () {
+      alert("You are now registered and redirected to sign in page");
+      window.location.href = "SignIn2.html";
+    }, 500);
   }
-  else (!validatePassword() || !validateName(firstNameInput) || !validateName(lastNameInput) || !validateEmail() || !validateID())
-  {
- alert("Invalid details, Please check again your details");
-    event.preventDefault();
+  else{
+    alert("Invalid details, Please check again your details");
   }
 });
 
@@ -38,11 +40,21 @@ function validatePassword() {
 }
 
 // Validate name inputs
-function validateName(nameInput) {
-  const nameValue = nameInput.value;
+function validateFirstName() {
+  const nameValue = firstNameInput.value;
   if (!nameRegex.test(nameValue)) {
-    alert('Please enter a valid name using only letters.');
-    nameInput.focus();
+    alert('Please enter a valid first name using only letters.');
+    firstNameInput.focus();
+    return false;
+  }
+  return true;
+}
+
+function validateLastName() {
+  const nameValue = lastNameInput.value;
+  if (!nameRegex.test(nameValue)) {
+    alert('Please enter a valid last name using only letters.');
+    lastNameInput.focus();
     return false;
   }
   return true;
@@ -60,10 +72,11 @@ function validateEmail() {
 }
 
 function validateID() {
-  const id = document.getElementById("ID").value;
-const regex = /\b\d{8}\b/;
-if (!regex.test(id)) {
-    alert("ID must be 8 digits.");
+  //const id = document.getElementById("ID").value;
+  const id = document.querySelector('#ID').value;
+  const regexID = /\b\d{8}\b/;
+  if (!regexID.test(id)) {
+    alert("ID must be 8 digits long.");
     return false;
   }
   return true;

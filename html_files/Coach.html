@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Profile</title>
-    <link rel="stylesheet" href="../public/css/user-profile.css">
-    <link href="https://fonts.googleapis.com/css?family=Buffalo&display=swap" rel="stylesheet">
+    <title>Coach</title>
+    <link rel="stylesheet" href="../public/css/coach.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://kit.fontawesome.com/b39bb7fe27.js"></script>
-</head>
 
+</head>
 <body onload="welcomingTitle()">
     <div class="topBar"> </div>
     <nav>
@@ -22,48 +17,18 @@
         </label>
         <img src="../public/pics/flow big.png" alt="Navigation Bar Logo" class = "navBarLogo">
         <ul>
-            <li><a href="../files/Home-page.html">Home</a></li>
-            <li><a href="../files/Coach.html">FLOW coaches </a></li>
-            <li><a href="../files/Training.html">FLOW classes</a></li>
-            <li><a href="../files/Table%20of%20classes.html">FLOW week schedule</a></li>
-            <li><a href="../files/Contact-us.html">Contact us</a></li>
-            <li><a href="../files/User%20profile.html">My Profile</a></li>
+            <li><a href="/Home-page.html">Home</a></li>
+            <li><a href="/Coach.html">FLOW coaches </a></li>
+            <li><a href="/Training.html">FLOW classes</a></li>
+            <li><a href="/Table%20of%20classes.html">FLOW week schedule</a></li>
+            <li><a href="/Contact-us.html">Contact us</a></li>
+            <li><a href="/User%20profile.html">My Profile</a></li>
         </ul>
     </nav>
-
-    <div class="mainForm">
-        <div class="user-profile">
-            <label class="user-icon">
-                <i class="fa-solid fa-user"></i>
-            </label>
-          <div class="profile-items">
-              <h1 id="userTitle">Welcome Back,</h1>
-              <br>
-              <label id="name-label">Name:</label>
-              <br>
-              <label id="birthdate">Birthdate:</label>
-              <br>
-              <label id="health-level">Health Level:</label>
-          </div>
-            <br>
-            <label class="user-icon">
-                <i class="fa-solid fa-medal"></i>
-            </label>
-          <div class="lesson-list">
-            <h4>Your Upcoming Lessons</h4>
-            <ul class="lessons">
-            </ul>
-          </div>
-
-          <div class="button-container">
-              <button class="button" data-url="../files/Review.html">Review Class</button>
-              <button class="button" data-url="../files/Contact-us.html">Update Profile</button>
-              <button class="button" data-url="../files/Contact-us.html" >Cancel Membership</button>
-          </div>
-
-        </div>
-    </div>
-        <br><br><br><br><br>
+    <br><br><br>
+    <h1>Our Coaches</h1>
+    <p class="about"> Welcome to FLOW! Here you can take a closer look to our best coaches team!</p>
+    <div id="Coach-container"></div>
         <footer>
             <div class="bottomBar">
                 <div class="row">
@@ -105,11 +70,10 @@
                           </a>
                         </div>
                     </div>
-                    <p> © 2023 WEB Course BGU, Shahar B. & Omer F.  </p>
-                    </div>
                 </div>
+            </div>
         </footer>
-        <script src="../public/JS/user-profile.js"></script>
-        <script src="../Public/JS/Welcome-title.js"> </script>
-    </body>
+    <script src="../public/JS/coachers.js"></script>
+    <script src="../Public/JS/Welcome-title.js"> </script>
+</body>
 </html>
